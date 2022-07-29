@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #box-1 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(34, 34, 78);
+            border: 1px solid;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            margin: 0 auto;
+            margin-top: 300px;
+            transition: width 5s 1s ease-in, height 7s 2s ease-in;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-delay: 2s; */
+        }
+
+        #box-1:hover {
+            width: 500px;
+            height: 300px;
+        }
+
+        #box-2 {
+            height: 200px;
+            width: 250px;
+            background-color: black;
+            transition: width 4s, transfrom 7s;
+            margin-left: 200px;
+        }
+
+        #box-2:hover {
+            width: 500px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1">Hello world</div>
+    <div id="box-2">Shakil Ahamed</div>
+
+
+</html>
