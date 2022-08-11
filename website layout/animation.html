@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes slider {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: rgb(206, 220, 10);
+                transform: scale(1);
+            }
+
+            25% {
+                top: 210px;
+                left: 100px;
+                background-color: rgb(219, 16, 192);
+            }
+
+
+            50% {
+                top: 0px;
+                left: 250px;
+                background-color: rgb(14, 222, 56);
+                transform: scale(1.5);
+            }
+
+            75% {
+                top: 210px;
+                left: 350px;
+                background-color: red;
+                /* transform: rotate(360deg); */
+            }
+
+            100% {
+                top: 0px;
+                left: 520px;
+                background-color: blueviolet;
+                transform: scale(1);
+            }
+        }
+
+        .container {
+            height: 300px;
+            width: 600px;
+            background-color: cadetblue;
+
+        }
+
+        .ball {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: rgb(206, 220, 10);
+            animation: slider 4s linear 0.5s infinite alternate;
+            animation-play-state: running;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
